@@ -5,10 +5,10 @@ p {
 }
 
 body {
-    /*background-color: burlywood;*/
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
 }
 
-#menu {
+.menu {
     width: 80%;
     background-color: burlywood;
     margin-left: auto;
