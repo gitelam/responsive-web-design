@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please complete the questions</p>
+
+    <form id="survey-form" action="form1">
+      <label id="name-label" for="name">
+        name
+        <input required id="name" type="text" placeholder="set" />
+      </label>
+
+      <label id="email-label" for="email">
+        email
+        <input required id="email" type="email" placeholder="set" />
+      </label>
+
+      <label id="number-label" for="number">
+        number
+        <input id="number" type="number" min="2" max="20" placeholder="set" />
+      </label>
+      Select an radio option:
+      <label for="dropdown">
+        <select id="dropdown">
+          <option>none</option>
+          <option>some</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <label for="op1">
+          <input checked id="op1" type="radio" name="radios" value="1" />
+          op 1
+        </label>
+        <label for="op2">
+          <input id="op2" type="radio" name="radios" value="2" />
+          op 2
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="ch1">
+          <input id="ch1" type="checkbox" name="radios" value="1" />
+          op 1
+        </label>
+        <label for="ch2">
+          <input id="ch2" type="checkbox" name="radios" value="2" />
+          op 2
+        </label>
+        <label for="ch3">
+          <input id="ch3" type="checkbox" name="radios" value="3" />
+          op 3
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>additional comments</legend>
+        <textarea></textarea>
+      </fieldset>
+
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>
